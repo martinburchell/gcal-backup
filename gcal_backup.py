@@ -15,10 +15,10 @@ import datetime
 # www.one-button.org
 # github.com/lhutton
 
-# Directroy where your backups are stored
-backupdir = "/home/username/gcalbackups/"
-# Key values store of your calendar names and private URLs
-calendars = {'CalenderName1': 'https://CalendarPrivateURL1', 'CalendarName2': 'https://CalenderPrivateURL2'}
+# Directory where your backups are stored
+
+from settings import *
+
 
 # Get the current date 
 currentdate = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M')
@@ -35,7 +35,7 @@ try:
 		response = urllib2.urlopen(calendars[calendar])
 		cal = response.read()
 		os.chdir(backupdir)
-		filename = calendar + ' ' + currentdate + '.ics'
+		filename = calendar + '-' + currentdate + '.ics'
 		calfile = open(filename, "w")
 		calfile.write(cal)
 		calfile.close()

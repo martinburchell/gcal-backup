@@ -1,0 +1,4 @@
+backupdir = "/home/username/gcalbackups/"
+
+# Key values store of your calendar names and private URLs
+calendars = {'CalenderName1': 'https://CalendarPrivateURL1', 'CalendarName2': 'https://CalenderPrivateURL2'}
