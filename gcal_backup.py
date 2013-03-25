@@ -19,7 +19,7 @@ from settings import *
 
 
 # Get the current date 
-currentdate = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M')
+currentdate = datetime.datetime.now().strftime('%Y-%m-%d')
 
 try:
 	# test to see if the backup directory exists
