@@ -15,8 +15,6 @@ import datetime
 # www.one-button.org
 # github.com/lhutton
 
-# Directory where your backups are stored
-
 from settings import *
 
 

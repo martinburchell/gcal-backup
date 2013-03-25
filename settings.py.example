@@ -1,3 +1,4 @@
+# Directory where your backups are stored
 backupdir = "/home/username/gcalbackups/"
 
 # Key values store of your calendar names and private URLs
