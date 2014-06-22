@@ -37,7 +37,7 @@ try:
         calfile.write(cal)
         calfile.close()
 except IOError, e:
-    print "I/O error({0}): {1})".format(e.errno, e.sterror)
+    print "I/O error({0}): {1})".format(e.errno, e.strerror)
 except:
     print "Unknown error:", sys.exc_info()[0]
     raise
